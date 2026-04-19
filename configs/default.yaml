@@ -1,0 +1,50 @@
+# ROI ratios
+roi_x0: 0.08
+roi_x1: 0.92
+roi_y0: 0.20
+roi_y1: 0.90
+
+# preprocess
+clahe_clip_limit: 2.5
+clahe_grid_size: 8
+gaussian_ksize: 5
+brightness_gain: 1.15
+
+# segmentation
+thr_percentile: 82.0
+min_contour_area: 2500
+morph_kernel: 7
+min_strip_area_ratio: 0.015
+min_strip_aspect_ratio: 0.9
+min_strip_width_ratio: 0.35
+hot_red_min: 180
+hot_rg_diff_min: 25
+hot_value_min: 220
+
+# thickness thickness_left_ratio/right_ratio over strip width
+thickness_left_ratio: 0.15
+thickness_right_ratio: 0.85
+
+# wave detect
+smooth_window: 17
+edge_ratio: 0.2
+slope_deg_threshold: 7.5
+bilateral_margin_mm: 3.5
+bilateral_from_center: true
+bilateral_center_min_level: 1
+middle_phase_width_ratio: 0.92
+middle_required_consecutive: 3
+middle_min_level: 2
+rms_mm_thresholds:
+  low: 4.0
+  mid: 8.0
+  high: 14.0
+
+# calibration (adjust after现场标定)
+mm_per_px_x: 2.0
+mm_per_px_y: 0.5
+ds_on_left: true
+
+# runtime
+temporal_alpha: 0.6
+frame_step: 1
