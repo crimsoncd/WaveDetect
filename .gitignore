@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+bin/
+obj/
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*~
